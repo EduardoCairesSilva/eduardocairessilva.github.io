@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/projetos.css">
+    <title>Portfolio - Eduardo Caires</title>
+</head>
+
+<body>
+    <header class="container">
+        <div class="page-header">
+            <div class="logo">
+                <a href="">Portfólio - E.C</a>
+            </div>
+            <input type="checkbox" id="click">
+
+            <label for="click" class="mainicon">
+                <div class="menu">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </label>
+            <ul>
+                <li><a href="index.html" style="--navAni:1">Inicio</a></li>
+                <li><a href="sobre.html" style="--navAni:2">Sobre</a></li>
+                <li><a href="habilidades.html" style="--navAni:3">Habilidades</a></li>
+                <li><a href="#" class="active" style="--navAni:4">Projetos</a></li>
+                <li><a href="contato.html" style="--navAni:5">Contato</a></li>
+            </ul>
+            <label class="mode">
+                <input type="checkbox" id="darkModeToggle">
+                <i class='bx bxs-moon'></i>
+            </label>
+        </div>
+    </header>
+
+
+    <section class="container">
+        <div class="main">
+            <section id="projects">
+                <h2 class="section-title">Projetos</h2>
+                <div class="section-content">
+                    <div class="project-cards">
+                        <div class="card">
+                            <img src="imagens/portfolio.png" alt="">
+                            <div>
+                                <a class="item-link" href="https://github.com/EduardoCairesSilva" target="_blank">
+                                    Github
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <h3>Projetos</h3>
+                                <p>
+                                    Aqui encontrará todos os projetos dos quais eu tenho feito por todo esse tempo de
+                                    css, html e reactJS.
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+            </section>
+
+            <section id="projects">
+                <h2 class="section-title">Dashboard style (reactJS)</h2>
+                <div class="section-content">
+                    <div class="project-cards">
+                        <div class="card">
+                            <img src="imagens/Dashboard.png" alt="">
+                            <div>
+                                <a class="item-link" href="https://eduardocairessilva.github.io/ProjetoDctree/" target="_blank">
+                                    Dashboard Style
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <h3>Projeto Dashboard</h3>
+                                <p>
+                                    Este é um pequeno projeto de dashboard onde você pode formatar o estilo dos links que criar dentro da página.
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+            </section>
+        </div>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

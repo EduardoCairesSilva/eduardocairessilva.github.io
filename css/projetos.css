@@ -196,6 +196,19 @@ li a:hover {
     animation-delay: 1.5s;
 }
 
+.item-link { 
+    text-decoration: underline;
+    font-size: 17px;
+    color: red;
+    font-weight: bolder;
+}
+
+.item-link:hover {
+    transition: all 1s;
+    font-size: 19px;
+    color: rgb(172, 3, 3);
+}
+
 /* FIM DA SEÇÃO 1 */
 
 /* MODO ESCURO */
@@ -368,4 +381,59 @@ li a:hover {
     .main {
         margin-top: 2rem;
     }
+}
+
+/* PROJECTS */
+
+#projects img {
+    width: 100%;
+    border: 1px solid #e2e2e2;
+}
+
+#projects .list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+#projects a {
+    flex-basis: 200px;
+    transition: transform 0.3s;
+}
+
+#projects a:hover {
+    transform: scale(1.03);
+}
+
+#projects {
+    max-width: 100%;
+}
+
+#projects .project-cards {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+#projects .card {
+    width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 5px;
+    border: 1px solid #e2e2e2;
+    gap: 5px;
+    border-radius: 2px;
+}
+
+#projects .card img {
+    border: 1px solid #e2e2e2;
+}
+
+#projects .card {
+    transition: transform 0.3s;
+}
+
+#projects .card:hover {
+    transform: scale(1.02);
 }

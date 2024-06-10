@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contato.css">
     <title>Portfolio - Eduardo Caires</title>
 </head>
 
@@ -24,11 +24,11 @@
                 </div>
             </label>
             <ul>
-                <li><a href="#" class="active" style="--navAni:1">Inicio</a></li>
+                <li><a href="index.html" style="--navAni:1">Inicio</a></li>
                 <li><a href="sobre.html" style="--navAni:2">Sobre</a></li>
                 <li><a href="habilidades.html" style="--navAni:3">Habilidades</a></li>
                 <li><a href="projetos.html" style="--navAni:4">Projetos</a></li>
-                <li><a href="contato.html" style="--navAni:5">Contato</a></li>
+                <li><a href="#" class="active" style="--navAni:5">Contato</a></li>
             </ul>
             <label class="mode">
                 <input type="checkbox" id="darkModeToggle">
@@ -37,27 +37,21 @@
         </div>
     </header>
 
-
     <section class="container">
         <div class="main">
-            <div class="detail">
-                <h3>Olá, seja bem vindo!</h3>
-                <h1>Eu sou <span style="color:#f9532d;">Eduardo</span></h1>
-                <p>Eu sou um desenvolvedor Web iniciante, atualmente faço landing pages e algumas aplicações em reactJS simples.
-                </p>
-                <div class="social">
-                    <a href="https://www.linkedin.com/in/eduardo-caires-silva-251859212/" style="--socialAni:1"><i class='bx bxl-linkedin'></i></a>
-                    <a href="https://www.instagram.com/caires.eduardo/" style="--socialAni:2"><i class='bx bxl-instagram'></i></a>
-                    <a href="https://github.com/EduardoCairesSilva" style="--socialAni:3"><i class='bx bxl-github'></i></a>
-                    <a href="https://wa.me/5585981753836" style="--socialAni:4"><i class='bx bxl-whatsapp'></i></a>
-                </div>
-            </div>
-            <div class="img-sec">
-                <div class="images">
-                    <img src="imagens/eduardo.jpeg"
-                        alt="" class="img-w">
-                </div>
-            </div>
+            <h4 class="titulo">Entre em Contato</h4>
+            <form action="#" class="contact-form">
+                <label for="name">Nome</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Mensagem</label>
+                <textarea id="message" name="message" rows="6" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
         </div>
     </section>
 

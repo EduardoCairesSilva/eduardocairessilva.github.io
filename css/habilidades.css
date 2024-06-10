@@ -369,3 +369,48 @@ li a:hover {
         margin-top: 2rem;
     }
 }
+
+
+/* Habilidades */
+
+#skills .tools ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 10px;
+  }
+  
+  #skills .tools li {
+    color: var(--secondary);
+    font-weight: bold;
+    font-size: 50px;
+  }
+  
+  #skills .tools-title:not(:first-of-type) {
+    margin-top: 25px;
+  }
+
+  .color-icon {
+    color: purple;
+    font-size: 1.5em;
+  }
+  
+  /* EXPERIENCE */
+  
+  #experience .experience-item:not(:first-of-type) {
+    margin-top: 25px;
+    display: block;
+  }
+  
+  #experience .company {
+    color: var(--secondary);
+  }
+  
+  #experience details summary {
+    cursor: pointer;
+    transition: all 1s;
+  }
+  
+  details summary {
+    transition: all 1s;
+  }

@@ -105,12 +105,16 @@ li a:hover {
 }
 
 .main {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(277px, 1fr));
-    row-gap: 2rem;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     margin-top: 3rem;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
 }
+
 
 .main h3 {
     font-size: 1.5rem;
@@ -368,4 +372,26 @@ li a:hover {
     .main {
         margin-top: 2rem;
     }
+}
+
+/* Texto */
+
+.titulo {
+    font-size: 2em;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.texto {
+    font-size: 1rem;
+    line-height: 1.6;
+    padding: 10px;
+    border: 1px solid #e2e2e2;
+    border-radius: 2px;
+    text-align: justify;
+}
+
+.container {
+    padding: 0 8.4rem;
 }
