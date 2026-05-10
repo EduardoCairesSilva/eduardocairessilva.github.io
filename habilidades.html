@@ -7,87 +7,135 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/habilidades.css">
-    <title>Portfolio - Eduardo Caires</title>
+    <title>Habilidades | Eduardo Caires</title>
 </head>
 
 <body>
-    <header class="container">
-        <div class="page-header">
+    <header>
+        <div class="container page-header">
             <div class="logo">
-                <a href="">Portfólio - E.C</a>
+                <a href="index.html">Portfólio - E.C</a>
             </div>
+            
             <input type="checkbox" id="click">
-
-            <label for="click" class="mainicon">
-                <div class="menu">
-                    <i class='bx bx-menu'></i>
-                </div>
+            <label for="click" class="menu-icon">
+                <i class='bx bx-menu'></i>
             </label>
-            <ul>
-                <li><a href="index.html" style="--navAni:1">Inicio</a></li>
-                <li><a href="sobre.html" style="--navAni:2">Sobre</a></li>
-                <li><a href="#" class="active" style="--navAni:3">Habilidades</a></li>
-                <li><a href="projetos.html" style="--navAni:4">Projetos</a></li>
-                <li><a href="contato.html" style="--navAni:5">Contato</a></li>
-            </ul>
-            <label class="mode">
-                <input type="checkbox" id="darkModeToggle">
+
+            <nav>
+                <ul>
+                    <li><a href="index.html" style="--navAni:1">Início</a></li>
+                    <li><a href="sobre.html" style="--navAni:2">Sobre</a></li>
+                    <li><a href="habilidades.html" style="--navAni:3">Habilidades</a></li>
+                    <li><a href="projetos.html" style="--navAni:4">Projetos</a></li>
+                    <li><a href="contato.html" style="--navAni:5">Contato</a></li>
+                </ul>
+            </nav>
+
+            <label class="mode-toggle">
+                <input type="checkbox" id="darkModeToggle" style="display:none;">
                 <i class='bx bxs-moon'></i>
             </label>
         </div>
     </header>
 
+    <main class="container">
+        <section class="skills-section">
+            <h2 class="section-title reveal">Minhas Habilidades</h2>
+            <p class="section-subtitle reveal" style="transition-delay: 0.1s;">
+                Ao longo da minha jornada, desenvolvi expertise em diversas tecnologias do ecossistema Fullstack. 
+                Aqui estão as principais ferramentas que utilizo para dar vida aos projetos.
+            </p>
 
-    <section class="container">
-        <div class="main">
-            <section id="skills">
-                <div class="section-content">
-                    <h2 class="section-title">Habilidades</h2>
-                    <div class="tools">
-
-                        <p class="section-description">
-                            Tenho habilidades relacionadas a html, css, javascript, typescript, reactJS, NextJS, VueJS,
-                            Python, Django, Java e PHP. Sendo a grande maioria mais para frontend e busco sempre aprimorar
-                            mais a cada dia, sigo estudando sempre para adquirir muito mais.
-                        </p>
-
-                        <h3 class="tools-title">Tecnologias</h3>
-
-                        <ul>
-                            <li>
-                                <i class="fa-brands fa-html5 color-icon"></i>
-                            </li>
-                            <li>
-                                <i class="fa-brands fa-css3-alt color-icon"></i>
-                            </li>
-                            <li>
-                                <i class="fa-brands fa-js color-icon"></i>
-                            </li>
-                            <li>
-                                <i class="fa-brands fa-react color-icon"></i>
-                            </li>
-                            <li>
-                                <i class="fa-brands fa-php color-icon"></i>
-                            </li>
-                            <li>
-                                <i class="fa-brands fa-node-js color-icon"></i>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-database color-icon"></i>
-                            </li>
-                            <li>
-                                <i class="fa-brands fa-vuejs color-icon"></i>
-                            </li>
-                            <li>
-                                <i class="fa-brands fa-python color-icon"></i>
-                            </li>
-                        </ul>
+            <div class="skills-container">
+                <!-- Core & Legacy Modernization -->
+                <div class="skill-category reveal" style="transition-delay: 0.2s;">
+                    <h3 class="category-title"><i class='bx bx-history'></i> Sistemas Críticos & Legados</h3>
+                    <div class="skill-grid">
+                        <div class="skill-item" title="Java (JEE)">
+                            <i class="fa-brands fa-java color-java"></i>
+                            <span>Java (JEE)</span>
+                        </div>
+                        <div class="skill-item" title="COBOL">
+                            <i class='bx bx-terminal color-html'></i>
+                            <span>COBOL</span>
+                        </div>
+                        <div class="skill-item" title="SQL">
+                            <i class="fa-solid fa-database color-db"></i>
+                            <span>SQL</span>
+                        </div>
+                        <div class="skill-item" title="AB Suite">
+                            <i class='bx bx-layer color-css'></i>
+                            <span>AB Suite</span>
+                        </div>
+                        <div class="skill-item" title="Arquitetura">
+                            <i class='bx bx-git-repo-forked color-node'></i>
+                            <span>Modernização</span>
+                        </div>
                     </div>
                 </div>
-            </section>
+
+                <!-- Innovation & Data -->
+                <div class="skill-category reveal" style="transition-delay: 0.4s;">
+                    <h3 class="category-title"><i class='bx bx-brain'></i> Inovação & IA</h3>
+                    <div class="skill-grid">
+                        <div class="skill-item" title="Agentes de IA">
+                            <i class='bx bx-bot color-react'></i>
+                            <span>Agentes de IA</span>
+                        </div>
+                        <div class="skill-item" title="Automação de BI">
+                            <i class='bx bx-bar-chart-alt-2 color-js'></i>
+                            <span>BI Automation</span>
+                        </div>
+                        <div class="skill-item" title="Python">
+                            <i class="fa-brands fa-python color-python"></i>
+                            <span>Python</span>
+                        </div>
+                        <div class="skill-item" title="ReactJS">
+                            <i class="fa-brands fa-react color-react"></i>
+                            <span>ReactJS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DevOps & Tools -->
+                <div class="skill-category reveal" style="transition-delay: 0.6s;">
+                    <h3 class="category-title"><i class='bx bx-cog'></i> Ferramentas & DevOps</h3>
+                    <div class="skill-grid">
+                        <div class="skill-item" title="Docker">
+                            <i class="fa-brands fa-docker color-docker"></i>
+                            <span>Docker</span>
+                        </div>
+                        <div class="skill-item" title="Maven">
+                            <i class='bx bx-package color-git'></i>
+                            <span>Maven</span>
+                        </div>
+                        <div class="skill-item" title="Git">
+                            <i class="fa-brands fa-git-alt color-git"></i>
+                            <span>Git</span>
+                        </div>
+                        <div class="skill-item" title="Node.js">
+                            <i class="fa-brands fa-node-js color-node"></i>
+                            <span>Node.js</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-socials">
+                <a href="https://www.linkedin.com/in/eduardo-caires-silva-251859212/"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/EduardoCairesSilva"><i class='bx bxl-github'></i></a>
+                <a href="https://wa.me/5585992762551"><i class='bx bxl-whatsapp'></i></a>
+            </div>
+            <p>&copy; 2024 Eduardo Caires. Todos os direitos reservados.</p>
         </div>
-    </section>
+    </footer>
 
     <script src="js/script.js"></script>
 </body>

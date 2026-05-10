@@ -6,53 +6,123 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/sobre.css">
-    <title>Portfolio - Eduardo Caires</title>
+    <title>Sobre Mim | Eduardo Caires</title>
 </head>
 
 <body>
-    <header class="container">
-        <div class="page-header">
+    <header>
+        <div class="container page-header">
             <div class="logo">
-                <a href="">Portfólio - E.C</a>
+                <a href="index.html">Portfólio - E.C</a>
             </div>
+            
             <input type="checkbox" id="click">
-            <label for="click" class="mainicon">
-                <div class="menu">
-                    <i class='bx bx-menu'></i>
-                </div>
+            <label for="click" class="menu-icon">
+                <i class='bx bx-menu'></i>
             </label>
-            <ul>
-                <li><a href="index.html" style="--navAni:1">Inicio</a></li>
-                <li><a href="#" class="active" style="--navAni:2">Sobre</a></li>
-                <li><a href="habilidades.html" style="--navAni:3">Habilidades</a></li>
-                <li><a href="projetos.html" style="--navAni:4">Projetos</a></li>
-                <li><a href="contato.html" style="--navAni:5">Contato</a></li>
-            </ul>
-            <label class="mode">
-                <input type="checkbox" id="darkModeToggle">
+
+            <nav>
+                <ul>
+                    <li><a href="index.html" style="--navAni:1">Início</a></li>
+                    <li><a href="sobre.html" style="--navAni:2">Sobre</a></li>
+                    <li><a href="habilidades.html" style="--navAni:3">Habilidades</a></li>
+                    <li><a href="projetos.html" style="--navAni:4">Projetos</a></li>
+                    <li><a href="contato.html" style="--navAni:5">Contato</a></li>
+                </ul>
+            </nav>
+
+            <label class="mode-toggle">
+                <input type="checkbox" id="darkModeToggle" style="display:none;">
                 <i class='bx bxs-moon'></i>
             </label>
         </div>
     </header>
 
-    <section class="container">
-        <div class="main">
-            <h4 class="titulo">Sobre mim</h4>
-            <p class="texto">Aqui nesta aba irei falar um pouco sobre mim. Me chamo Eduardo Caires, tenho 21 anos de
-                idade e desde os meus 13 anos que mexo com programação iniciando por python, fiz machine learning onde
-                participei de um bootcamp pelo instituto atlântico criamos um projeto de detecção de nódulos pulmonares
-                através da visão computacional, após isso eu segui estudando mais python por conta própria vendo vídeos
-                no YouTube onde desenvolvi alguns projetos básicos sozinho também como a roda do ano wicca e
-                reconhecimento facial e de mão usando visão computacional python. Após isso foi onde encontrei
-                desenvolvimento web, paguei um curso da Udemy e iniciei por lá, estudei 2 anos até poder finalizar o
-                curso e entrei aos 19 em um curso de desenvolvimento fullstack presencial pela Digital College onde
-                estou aprendendo desde o básico do HTML, CSS, JavaScript, ReactJS, Cypress e atualmente estou vendo
-                banco de dados não relacional e relacional, também veremos Node, Express, MongoDB e Jest. Fiz cursos de
-                JavaScript e TypeScript pela Udemy onde se ensinava também banco de dados como Node, Express, MySQL,
-                ReactJS e Regex e estudei Java pelo santander bootcamp 2024 e DevOps pelo Santander Coders 2024.</p>
+    <main class="container">
+        <section class="about-section">
+            <h2 class="section-title reveal">Sobre Mim</h2>
+            <div class="about-grid">
+                <div class="about-info reveal" style="transition-delay: 0.2s;">
+                    <p>
+                        Olá! Me chamo <strong>Eduardo Caires</strong>. Minha trajetória na tecnologia começou aos 13 anos, 
+                        mas hoje meu foco está na interseção entre a estabilidade dos sistemas críticos e a vanguarda da inteligência artificial.
+                    </p>
+                    <p>
+                        Atualmente, como desenvolvedor na <strong>XSEED</strong>, atuo diretamente na modernização de sistemas legados de grande porte para a 
+                        <strong>PRODESP</strong>, realizando a transição complexa de tecnologias como <strong>COBOL e AB Suite para Java (JEE)</strong>. 
+                        Essa vivência me conferiu uma expertise rara em arquiteturas robustas, lidando com Docker, Maven e integrações de sistemas governamentais (DIPOL).
+                    </p>
+                    <p>
+                        Além da modernização, sou um entusiasta de soluções inteligentes. Desenvolvo <strong>Agentes de IA</strong> e soluções de 
+                        <strong>Automação de BI</strong>, unindo minha base Fullstack (React/Node.js) com a análise de dados para otimizar processos corporativos. 
+                        Minha passagem pela <strong>ArcelorMittal</strong> consolidou minha visão de negócios, permitindo que eu entregue código que não apenas funciona, 
+                        mas que gera valor estratégico real.
+                    </p>
+                </div>
+                <div class="about-stats reveal" style="transition-delay: 0.4s;">
+                    <div class="stat-card">
+                        <h3>2026</h3>
+                        <p>Foco: Legados & IA</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>XSEED</h3>
+                        <p>Modernização PRODESP</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Fullstack</h3>
+                        <p>Java, React & Python</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="timeline reveal">
+                <h3 class="timeline-title">Minha Trajetória Profissional</h3>
+                <div class="timeline-items">
+                    <div class="timeline-item">
+                        <div class="timeline-date">2024 - 2026</div>
+                        <div class="timeline-content">
+                            <h4>ArcelorMittal</h4>
+                            <p>Estágio em Logística de Operações. Desenvolvimento de visão de negócios, processos corporativos e vivência em ambiente de grande porte.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">2026 - Presente</div>
+                        <div class="timeline-content">
+                            <h4>XSEED (Modernização de Sistemas)</h4>
+                            <p>Estágio em Desenvolvimento de Software focado em Legados. Atuação direta em projetos da PRODESP (DIPOL GCF/GCI), migrando COBOL para Java JEE com Docker e Maven.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">Atualidade</div>
+                        <div class="timeline-content">
+                            <h4>Inovação & IA</h4>
+                            <p>Desenvolvimento de Agentes de IA e Automação de BI, além de projetos Fullstack como o catálogo digital "Doce Sabor".</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">Educação</div>
+                        <div class="timeline-content">
+                            <h4>Graduação em Andamento</h4>
+                            <p>Cursando Ensino Superior no Centro Universitário Unigrande com base técnica consolidada pelo SENAI.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-socials">
+                <a href="https://www.linkedin.com/in/eduardo-caires-silva-251859212/"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/EduardoCairesSilva"><i class='bx bxl-github'></i></a>
+                <a href="https://wa.me/5585992762551"><i class='bx bxl-whatsapp'></i></a>
+            </div>
+            <p>&copy; 2024 Eduardo Caires. Todos os direitos reservados.</p>
         </div>
-    </section>
+    </footer>
 
     <script src="js/script.js"></script>
 </body>

@@ -6,54 +6,107 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/contato.css">
-    <title>Portfolio - Eduardo Caires</title>
+    <title>Contato | Eduardo Caires</title>
 </head>
 
 <body>
-    <header class="container">
-        <div class="page-header">
+    <header>
+        <div class="container page-header">
             <div class="logo">
-                <a href="">Portfólio - E.C</a>
+                <a href="index.html">Portfólio - E.C</a>
             </div>
+            
             <input type="checkbox" id="click">
-
-            <label for="click" class="mainicon">
-                <div class="menu">
-                    <i class='bx bx-menu'></i>
-                </div>
+            <label for="click" class="menu-icon">
+                <i class='bx bx-menu'></i>
             </label>
-            <ul>
-                <li><a href="index.html" style="--navAni:1">Inicio</a></li>
-                <li><a href="sobre.html" style="--navAni:2">Sobre</a></li>
-                <li><a href="habilidades.html" style="--navAni:3">Habilidades</a></li>
-                <li><a href="projetos.html" style="--navAni:4">Projetos</a></li>
-                <li><a href="#" class="active" style="--navAni:5">Contato</a></li>
-            </ul>
-            <label class="mode">
-                <input type="checkbox" id="darkModeToggle">
+
+            <nav>
+                <ul>
+                    <li><a href="index.html" style="--navAni:1">Início</a></li>
+                    <li><a href="sobre.html" style="--navAni:2">Sobre</a></li>
+                    <li><a href="habilidades.html" style="--navAni:3">Habilidades</a></li>
+                    <li><a href="projetos.html" style="--navAni:4">Projetos</a></li>
+                    <li><a href="contato.html" style="--navAni:5">Contato</a></li>
+                </ul>
+            </nav>
+
+            <label class="mode-toggle">
+                <input type="checkbox" id="darkModeToggle" style="display:none;">
                 <i class='bx bxs-moon'></i>
             </label>
         </div>
     </header>
 
-    <section class="container">
-        <div class="main">
-            <h4 class="titulo">Entre em Contato</h4>
-            <form action="#" class="contact-form">
-                <label for="name">Nome</label>
-                <input type="text" id="name" name="name" required>
+    <main class="container">
+        <section class="contact-section">
+            <h2 class="section-title reveal">Entre em Contato</h2>
+            <p class="section-subtitle reveal" style="transition-delay: 0.1s;">
+                Tem um projeto em mente ou quer apenas bater um papo? Sinta-se à vontade para me enviar uma mensagem!
+            </p>
 
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
+            <div class="contact-container">
+                <div class="contact-info reveal" style="transition-delay: 0.2s;">
+                    <div class="contact-item">
+                        <i class='bx bx-envelope'></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>yandudu74@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class='bx bx-phone'></i>
+                        <div>
+                            <h4>Telefone</h4>
+                            <p>+55 (85) 99276-2551</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class='bx bx-map'></i>
+                        <div>
+                            <h4>Localização</h4>
+                            <p>Fortaleza, Ceará - Brasil</p>
+                        </div>
+                    </div>
+                </div>
 
-                <label for="message">Mensagem</label>
-                <textarea id="message" name="message" rows="6" required></textarea>
+                <div class="contact-form-wrapper reveal" style="transition-delay: 0.4s;">
+                    <form id="whatsappForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Nome Completo</label>
+                            <input type="text" id="name" name="name" placeholder="Seu nome" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Seu Melhor Email</label>
+                            <input type="email" id="email" name="email" placeholder="email@exemplo.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Assunto</label>
+                            <input type="text" id="subject" name="subject" placeholder="Do que se trata?" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensagem</label>
+                            <textarea id="message" name="message" rows="6" placeholder="Sua mensagem..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Enviar para o WhatsApp</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
 
-                <button type="submit">Enviar</button>
-            </form>
+    <footer>
+        <div class="container">
+            <div class="footer-socials">
+                <a href="https://www.linkedin.com/in/eduardo-caires-silva-251859212/"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/EduardoCairesSilva"><i class='bx bxl-github'></i></a>
+                <a href="https://wa.me/5585992762551"><i class='bx bxl-whatsapp'></i></a>
+            </div>
+            <p>&copy; 2024 Eduardo Caires. Todos os direitos reservados.</p>
         </div>
-    </section>
+    </footer>
 
     <script src="js/script.js"></script>
 </body>

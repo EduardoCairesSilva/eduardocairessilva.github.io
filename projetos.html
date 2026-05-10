@@ -6,85 +6,124 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/projetos.css">
-    <title>Portfolio - Eduardo Caires</title>
+    <title>Projetos | Eduardo Caires</title>
 </head>
 
 <body>
-    <header class="container">
-        <div class="page-header">
+    <header>
+        <div class="container page-header">
             <div class="logo">
-                <a href="">Portfólio - E.C</a>
+                <a href="index.html">Portfólio - E.C</a>
             </div>
+            
             <input type="checkbox" id="click">
-
-            <label for="click" class="mainicon">
-                <div class="menu">
-                    <i class='bx bx-menu'></i>
-                </div>
+            <label for="click" class="menu-icon">
+                <i class='bx bx-menu'></i>
             </label>
-            <ul>
-                <li><a href="index.html" style="--navAni:1">Inicio</a></li>
-                <li><a href="sobre.html" style="--navAni:2">Sobre</a></li>
-                <li><a href="habilidades.html" style="--navAni:3">Habilidades</a></li>
-                <li><a href="#" class="active" style="--navAni:4">Projetos</a></li>
-                <li><a href="contato.html" style="--navAni:5">Contato</a></li>
-            </ul>
-            <label class="mode">
-                <input type="checkbox" id="darkModeToggle">
+
+            <nav>
+                <ul>
+                    <li><a href="index.html" style="--navAni:1">Início</a></li>
+                    <li><a href="sobre.html" style="--navAni:2">Sobre</a></li>
+                    <li><a href="habilidades.html" style="--navAni:3">Habilidades</a></li>
+                    <li><a href="projetos.html" style="--navAni:4">Projetos</a></li>
+                    <li><a href="contato.html" style="--navAni:5">Contato</a></li>
+                </ul>
+            </nav>
+
+            <label class="mode-toggle">
+                <input type="checkbox" id="darkModeToggle" style="display:none;">
                 <i class='bx bxs-moon'></i>
             </label>
         </div>
     </header>
 
+    <main class="container">
+        <section class="projects-section">
+            <h2 class="section-title reveal">Meus Projetos</h2>
+            <p class="section-subtitle reveal" style="transition-delay: 0.1s;">
+                Uma seleção de alguns dos meus melhores trabalhos, onde aplico meus conhecimentos em frontend e backend.
+            </p>
 
-    <section class="container">
-        <div class="main">
-            <section id="projects">
-                <h2 class="section-title">Projetos</h2>
-                <div class="section-content">
-                    <div class="project-cards">
-                        <div class="card">
-                            <img src="imagens/portfolio.png" alt="">
-                            <div>
-                                <a class="item-link" href="https://github.com/EduardoCairesSilva" target="_blank">
-                                    Github
-                                </a>
-                            </div>
-                            <div class="card-body">
-                                <h3>Projetos</h3>
-                                <p>
-                                    Aqui encontrará todos os projetos dos quais eu tenho feito por todo esse tempo de
-                                    css, html e reactJS.
-                                </p>
-                            </div>
-
+            <div class="projects-grid">
+                <!-- Projeto Modernização -->
+                <div class="project-card reveal" style="transition-delay: 0.2s;">
+                    <div class="project-img">
+                        <div class="placeholder-img">
+                            <i class='bx bx-data'></i>
+                        </div>
+                        <div class="project-overlay">
+                            <span class="btn">Sistema Crítico</span>
                         </div>
                     </div>
-            </section>
-
-            <section id="projects">
-                <h2 class="section-title">Dashboard style (reactJS)</h2>
-                <div class="section-content">
-                    <div class="project-cards">
-                        <div class="card">
-                            <img src="imagens/Dashboard.png" alt="">
-                            <div>
-                                <a class="item-link" href="https://eduardocairessilva.github.io/ProjetoDctree/" target="_blank">
-                                    Dashboard Style
-                                </a>
-                            </div>
-                            <div class="card-body">
-                                <h3>Projeto Dashboard</h3>
-                                <p>
-                                    Este é um pequeno projeto de dashboard onde você pode formatar o estilo dos links que criar dentro da página.
-                                </p>
-                            </div>
+                    <div class="project-content">
+                        <h3>Modernização PRODESP</h3>
+                        <p>Atuação em sistemas DIPOL GCF/GCI, migrando arquiteturas legadas para Java JEE com foco em escalabilidade e segurança.</p>
+                        <div class="tags">
+                            <span>Java JEE</span>
+                            <span>COBOL</span>
+                            <span>Docker</span>
+                            <span>Maven</span>
                         </div>
                     </div>
-            </section>
+                </div>
+
+                <!-- Projeto IA & BI -->
+                <div class="project-card reveal" style="transition-delay: 0.4s;">
+                    <div class="project-img">
+                        <div class="placeholder-img">
+                            <i class='bx bx-brain'></i>
+                        </div>
+                        <div class="project-overlay">
+                            <span class="btn">Inovação</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Agentes de IA & Automação BI</h3>
+                        <p>Criação de soluções inteligentes para análise de dados e otimização de processos através de agentes autônomos.</p>
+                        <div class="tags">
+                            <span>Python</span>
+                            <span>IA</span>
+                            <span>BI</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projeto Doce Sabor -->
+                <div class="project-card reveal" style="transition-delay: 0.6s;">
+                    <div class="project-img">
+                        <img src="imagens/docesabor.png" alt="Doce Sabor">
+                        <div class="project-overlay">
+                            <a href="#" class="btn">Case Estudo</a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Catálogo Digital "Doce Sabor"</h3>
+                        <p>Desenvolvimento de um catálogo digital moderno e funcional, integrando persistência de dados em tempo real com backend as a service.</p>
+                        <div class="tags">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                            <span>Supabase</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-socials">
+                <a href="https://www.linkedin.com/in/eduardo-caires-silva-251859212/"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/EduardoCairesSilva"><i class='bx bxl-github'></i></a>
+                <a href="https://wa.me/5585992762551"><i class='bx bxl-whatsapp'></i></a>
+            </div>
+            <p>&copy; 2024 Eduardo Caires. Todos os direitos reservados.</p>
         </div>
-    </section>
+    </footer>
 
     <script src="js/script.js"></script>
 </body>
